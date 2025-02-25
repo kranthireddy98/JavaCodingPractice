@@ -1,8 +1,9 @@
 public class LinearSearch {
     public static void main(String[] args) {
         int[] ar = {34,44,54,65,34};
-        int target = 44;
+        int target = 34;
         int result = li(ar,target);
+        System.out.println(result);
 
     }
 
