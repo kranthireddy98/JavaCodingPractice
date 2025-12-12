@@ -11,7 +11,6 @@ public class CountNoOfDigits {
             num=num/10;
             count+=1;
         }
-
         System.out.println(count);
     }
 }
