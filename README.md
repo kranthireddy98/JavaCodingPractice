@@ -29,5 +29,4 @@ Each folder represents a **specific topic or concept**.
 
 ---
 
-## 📂 Project Structure (High Level)
 
