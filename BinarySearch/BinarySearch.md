@@ -16,7 +16,7 @@ Worst case O(logn):
 
 --> start == End
 
-
+ 
 ```
 static int binarySearch(int[] arr,int target) {
 
@@ -51,3 +51,16 @@ Step:
 
 1. figure out sort order
 2.
+
+
+## What Must happen if element is not found?
+
+1. Start > End
+Final State of start and end 
+2. end = start -1
+3. start == Position where the element should be inserted
+4. end = last element smaller than target
+Floor & Ceil
+5. Floor -> end
+6. Ceil -> start
+7. 
