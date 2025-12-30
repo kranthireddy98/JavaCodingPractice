@@ -7,10 +7,10 @@ public class CellsWithOddValues {
 
         int m = 2;
         int n = 3;
-        int[][] indices= {{0,0},{1,1}};
+        int[][] indices= {{0,1},{1,1}};
 
         int count = oddValueCount(m,n,indices);
-
+        System.out.println(count);
     }
 
     static int oddValueCount(int m, int n, int[][] indices)
@@ -26,19 +26,28 @@ public class CellsWithOddValues {
             for(int i = 0;i<n;i++)
             {
                 out[row][i]++;
+                if(out[row][i] %2 ==0)
+                {
+                    oddCount -=1;
+                }else{
+                    oddCount+=1;
+                }
             }
             for(int j = 0;j<m;j++)
             {
                 out[j][col]++;
+                if(out[j][col] %2 ==0)
+                {
+                    oddCount -=1;
+                }else{
+                    oddCount+=1;
+                }
             }
 
         }
         System.out.println(Arrays.deepToString(out));
 
-        for (int row = 0;row<m;row++)
-        {
 
-        }
         return oddCount;
     }
 }
