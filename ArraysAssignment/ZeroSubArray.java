@@ -4,7 +4,7 @@ public class ZeroSubArray {
 
 
     public static void main(String[] args) {
-        int[] nums = {2,1,0,0,2,5,0,0,4};
+        int[] nums = {0,0,0,0};
         System.out.println(zeroFilledSubarray(nums));
     }
     public static long zeroFilledSubarray(int[] nums) {
