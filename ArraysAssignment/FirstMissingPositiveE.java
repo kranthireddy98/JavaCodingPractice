@@ -19,7 +19,8 @@ public class FirstMissingPositiveE {
         if all exists return max +1
 
         Drawback :
-        If the array contains a huge number (like 1,000,000,000), the second loop will take a long time to run. In a professional interview, you can improve this by realizing that the answer must be between $1$ and nums.length + 1
+        If the array contains a huge number (like 1,000,000,000), the second loop will take a long time to run. In a professional interview,
+        you can improve this by realizing that the answer must be between 1 and nums.length + 1
     */
     public static int firstMissingPositive1(int[] nums) {
 
