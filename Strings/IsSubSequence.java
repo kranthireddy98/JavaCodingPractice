@@ -1,5 +1,8 @@
 package Strings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Leet Code 392
 public class IsSubSequence {
 
