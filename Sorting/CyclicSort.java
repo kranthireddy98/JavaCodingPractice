@@ -21,6 +21,7 @@ public class CyclicSort {
             int i =0;
             while(i<arr.length )
             {
+                //correct = nums[i] -1;
                 int correct = arr[i];
                 if(arr[i] != arr[correct]) {
 
