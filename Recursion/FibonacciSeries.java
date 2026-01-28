@@ -1,18 +1,24 @@
+package Recursion;
+
 import java.util.ArrayList;
 import  java.math.BigInteger;
 
 public class FibonacciSeries {
     public static void main(String[] args) {
 
-        ArrayList<BigInteger> fib = fibo(100);
+         int fib = fibo(4);
         System.out.println(fib);
-
-
-
 
     }
 
-    static  ArrayList<BigInteger> fibo (int n){
+    static int fibo(int n){
+        if(n <2){
+            return n;
+        }
+        return fibo(n-1) + fibo(n-2);
+    }
+
+    static  ArrayList<BigInteger> fibo1 (int n){
 
         ArrayList<BigInteger> fibb= new ArrayList<>();
         fibb.add(BigInteger.ZERO);
