@@ -6,7 +6,7 @@ import  java.math.BigInteger;
 public class FibonacciSeries {
     public static void main(String[] args) {
 
-         int fib = fibo(4);
+         int fib = fibo(50);
         System.out.println(fib);
 
     }

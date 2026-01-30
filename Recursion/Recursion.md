@@ -18,3 +18,13 @@ returnType solve(input) {
 return result
 }
 ```
+### Types of Recurrence relations
+* Linear recurrence 
+* Divide and conquer
+
+### Recursive method 
+1. Inputs
+2. Return type
+3. Body
+4. make sure to return the result of function call if it has return type
+5. 
