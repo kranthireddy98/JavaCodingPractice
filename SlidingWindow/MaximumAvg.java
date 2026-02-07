@@ -1,5 +1,9 @@
 package SlidingWindow;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Map;
+
 public class MaximumAvg {
 
     public static void main(String[] args) {
@@ -7,6 +11,16 @@ public class MaximumAvg {
         int k = 1;
         double avg = findMaxAverage(nums,k);
         System.out.println(avg);
+
+        System.out.println(8/3);
+
+        Deque<Integer> dq = new ArrayDeque<>();
+        dq.addFirst(1);
+        dq.addFirst(2);
+        dq.addLast(3);
+
+        dq.pollLast();
+        System.out.println(dq);
     }
 
     public static double findMaxAverage(int[] nums, int k) {

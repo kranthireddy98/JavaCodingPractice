@@ -1,7 +1,7 @@
 ## Sliding Window
 
 ### Prerequisites
-Before we even say the words "Sliding window', you must be rock-solid oon three ideas.
+Before we even say the words "Sliding window', you must be rock-solid on three ideas.
 
 **1. Time Complexity**
 * The Brute Force Habit
@@ -38,7 +38,7 @@ You place:
 * Left pointer (L) -> start of the range
 * Right pointer (R) -> end of range
 
-You move them forward, never backward.
+**You move them forward, never backward.**
 
 ``` 
 Index:  0  1  2  3  4  5
@@ -108,7 +108,6 @@ Summary :
 
 
 
-
 ## Theoretical Foundation
 Why Sliding window Works (O(n^2)) -> O(n)
 
@@ -122,7 +121,7 @@ for (int i = 0; i < n; i++) {
 ```
 What's Happening?
 * For `i  =0 ` you process
-  * `[0..0,[0..1],[0..2],...,[0..n-1]`
+  * `[0..0],[0..1],[0..2],...,[0..n-1]`
 * For `i = 1`
   * `[1..1],[1..2],[1..3],...,[1..n-1]`
 
