@@ -272,7 +272,23 @@ public static int lengthOfLongestSubstring(String s) {
 | Longest    | while invalid | after shrink  |
 
 
+### At Most K Distinct
+``` 
+left = 0
+for right = 0 → n-1:
+    add s[right]
+    if freq[s[right]] == 1:
+        distinctCount++
 
+    while (distinctCount > K):
+        remove s[left]
+        if freq[s[left]] == 0:
+            distinctCount--
+        left++
+
+    maxLen = max(maxLen, right - left + 1)
+
+```
 
 
 
