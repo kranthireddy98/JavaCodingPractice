@@ -13,10 +13,11 @@ public class Producer implements Runnable {
         try {
             while (true){
                 topic.producer("Message: "+ count++);
-                Thread.sleep(1000);
+                System.out.println("Producer: "+count);
+                Thread.sleep(100);
             }
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            Thread.currentThread().interrupt();
         }
     }
 }

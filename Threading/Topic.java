@@ -8,26 +8,29 @@ import java.util.concurrent.BlockingQueue;
 public class Topic {
     public static Queue<String> messages = new LinkedList<>();
     public static int capacity =5;
-    public static BlockingQueue<String> messageQue = new ArrayBlockingQueue<>(10);
+    private   BlockingQueue<String> messageQue = new ArrayBlockingQueue<>(10);
 
-    public synchronized void producer(String message) throws InterruptedException {
+    public  void producer(String message) throws InterruptedException {
         /*while (capacity == messages.size()){
             wait();
         }
         messages.add(message);
         notifyAll();*/
-
-        messageQue.add(message);
+        //System.out.println(message);
+        messageQue.put(message);
+        System.out.println("Produced " + message);
+        System.out.println(Thread.currentThread().getState());
+        //System.out.println("queue "+messageQue.poll());
     }
 
-    public synchronized void consumer() throws InterruptedException {
+    public  void consumer() throws InterruptedException {
        /* while (messages.isEmpty()){
             wait();
         }
         String message = messages.poll();
         System.out.println(message);
         notifyAll();*/
-        String me = messageQue.poll();
+        String me = messageQue.take();
         System.out.println(me);
     }
 }

@@ -12,8 +12,10 @@ public class Consumer implements Runnable{
 
 
         try {
+            int count = 0;
             while (true){
                 topic.consumer();
+                Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
