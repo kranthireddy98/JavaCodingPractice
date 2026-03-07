@@ -5,12 +5,11 @@ import java.util.concurrent.atomic.LongAdder;
 
 public class AtomicInt {
     public static void main(String[] args) {
-        AtomicInteger ai = new AtomicInteger();
+        AtomicInteger ai = new AtomicInteger(5);
 
         ai.set(2);
 
         System.out.println(ai.get());
-
         System.out.println(ai.addAndGet(4));
         System.out.println(ai.getAndAdd(2));
         System.out.println(ai.compareAndExchange(8,3));
